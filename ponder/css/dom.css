@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(211, 211, 211);
+}
+
+#content {
+    border: 1px solid rgb(194, 194, 194);
+    padding: 80px;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+}
+
+h1 + p {
+    color: rgb(40, 94, 152);
+    font-size: 20px;
+}
+
+hr {
+    background-color: rgb(40, 94, 152);
+    width: 500px;
+    height: 3px;
+    border: none;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#topics {
+    width: 310px;
+    margin: 0 auto;
+}

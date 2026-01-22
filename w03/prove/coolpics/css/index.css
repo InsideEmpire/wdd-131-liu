@@ -1,0 +1,83 @@
+header {
+    background-color: rgb(69, 127, 219);
+    color: white;
+    text-align: center;
+}
+header h1,
+header button,
+header nav {
+    margin: 0;
+    padding: 10px;
+}
+.menu-btn {
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: larger;
+    display: block;
+    margin: 0 auto;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+.display {
+    display: block;
+}
+main {
+    background-color: rgb(204, 204, 204);
+    padding: 20px;
+}
+main h1 {
+    text-align: center;
+}
+.pic {
+    justify-self: center;
+}
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 5px 5px 10px black;
+}
+footer {
+    background-color: rgb(69, 127, 219);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 750px) {
+    nav {
+        display: none;
+    }
+    .pics {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 1100px) {
+    nav {
+        display: none;
+    }
+    .pics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .menu-btn {
+        display: none;
+    }
+    .pics {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+}

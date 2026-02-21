@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <form id="payment">
+        <div id="card">
+            <div id="card-front">
+                <div id="total">
+                    <p>TOTAL: $199</p>
+                </div>
+                <div id="card-logo">
+                    <p>💳</p>
+                </div>
+                <div id="card-number">
+                    <label for="card-num">CARD NUMBER</label>
+                    <input type="text" name="card-number" id="card-num" pattern="[0-9]{16}" placeholder="1234 5678 9101 1020">
+                </div>
+                <div id="card-holder">
+                    <label for="card-hld">CARD HOLDER</label>
+                    <input type="text" name="card-holder" id="card-hld" placeholder="Garrison Liu">
+                </div>
+                <div id="expiration">
+                    <label>EXPIRATION</label>
+                    <div id="exp-inputs">
+                        <input type="text" name="exp-month" id="exp-month" placeholder="MM" maxlength="2" aria-labelledby="expirationDate">
+                        <input type="text" name="exp-year" id="exp-year" placeholder="YY" maxlength="2" aria-labelledby="expirationDate">
+                    </div>
+                </div>
+            </div>
+            <div id="card-back">
+                <div id="stripe"></div>
+                <div id="cvv">
+                    <label for="card-cvv">CVV</label>
+                    <input type="text" name="card-cvv" id="card-cvv" placeholder="XXX" maxlength="3">
+                </div>
+            </div>
+            <input id="btn" type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

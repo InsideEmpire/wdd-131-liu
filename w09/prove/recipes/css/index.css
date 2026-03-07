@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* HEADER */
+
+.header {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-area img {
+    width: 100px;
+}
+
+.logo-area h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius:5px;
+}
+
+.search input {
+    width: 100%;
+}
+
+.search img {
+    width: 20px;
+}
+
+main {
+    width: 100%;
+}
+
+/* RECIPE */
+
+.recipe {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius:5px;
+}
+
+.recipe img {
+    width: 400px;
+    border-radius: 8px;
+}
+
+.recipe-info {
+    max-width: 400px;
+}
+
+.recipe-info h2 {
+    font-family: 'Amatic SC', cursive;
+    color: deepskyblue;
+    font-size: 40px;
+}
+
+.recipe-info input {
+    height: 30px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social img {
+    width: 30px;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 1024px) {
+
+    body {
+        width: 60%;
+    }
+
+    .recipe {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius:5px;
+    }
+
+    .recipe img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

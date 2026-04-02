@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/demo.css">
+    <script src="js/demo.js" defer></script>
+    <title>SolarTint</title>
+</head>
+
+<body>
+    <header>
+        <button class="menu-btn" aria-expanded="false" aria-label="Toggle navigation menu" aria-controls="main-nav">
+            <div class="bar1" aria-hidden="true"></div>
+            <div class="bar2" aria-hidden="true"></div>
+            <div class="bar3" aria-hidden="true"></div>
+        </button>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="demo.html" aria-current="page">Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pics">
+            <section class="pic"><img src="images/SolarTint-1.png" alt="SolarTint interface showing Auto Sync Active at 12:00 noon with screen color temperature at 6,500 Kelvin, featuring a bright orange daylight color palette and sun icon."></section>
+            <section class="pic"><img src="images/SolarTint-2.png" alt="SolarTint in Demo Mode simulating 12:00 noon with color temperature set to 6,500 Kelvin, displaying the manual time travel slider and a bright daylight interface."></section>
+            <section class="pic"><img src="images/SolarTint-3.png" alt="SolarTint Demo Mode simulating sunset at 18:00 with color temperature at 4,731 Kelvin, showing a warm magenta and orange transitional color gradient on the curve and moon icon."></section>
+            <section class="pic"><img src="images/SolarTint-4.png" alt="SolarTint Demo Mode simulating 00:00 midnight with color temperature at 3,000 Kelvin, featuring a deep blue and purple night-time color palette and a prominent moon icon."></section>
+        </section>
+        <dialog aria-label="Image Preview">
+            <img alt="Enlarged preview">
+            <button class="close-viewer" aria-label="Close preview">X</button>
+        </dialog>
+    </main>
+    <div class="horizon-glow" aria-hidden="true"></div>
+</body>
+
+</html>
